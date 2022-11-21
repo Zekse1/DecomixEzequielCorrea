@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>DecoMix</title>
+</head>
+<body>
+    <div id="contenedor_maestro">
+        <header class="header"> <!--Inicio del encabezado-->
+            <nav> <!--Inicio de la barra de navegacion-->
+                <div class="titulo_header">
+                    <a href=""><h1>Decomix</h1></a>
+                    <h2>Donde todo es posible!</h2>
+                </div>
+                <div class="nav_menu">
+                    <input type="checkbox" id="check">    
+                    <label for="check" class="checkbtn">
+                        <i id="menu_icon"><img src="../assets/icons/menu.png" alt="" height="30px"></i>
+                    </label>
+                    <ul id="menu_navegacion">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="mobiliario.html">Mobiliario</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav> <!--Fin de la barra de navegacion-->
+        </header> <!--Fin del encabezado-->
+    
+        <main>
+            <section class="contenido">
+                <div id="formulario_contacto">
+                    <h3>Contactanos!</h3>
+                    <p>
+                        Hagamos realidad el evento que tanto soñaste! Dejanos tus datos y un comentario de como queres que sea tu evento, nos pondremos en contacto lo antes posible.
+                    </p>
+                    <form action="">
+                        <label for="nombre_usuario">Nombre</label>
+                        <input type="text" placeholder="Tu nombre" id="nombre_usuario">
+        
+                        <label for="email_contacto">Email</label>
+                        <input type="email" placeholder="Tu email de contacto" id="email_contacto">
+        
+                        <label for="mensaje_usuario">Mensaje</label>
+                        <textarea name="" id="" cols="30" rows="15" placeholder="Comentanos como es el evento de tus sueños."></textarea>
+                     
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div id="mapa">
+                    <p>
+                        Tambien nos podes encontrar en calle falsa 1234, Pilar, Buenos Aires!
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105227.70992317649!2d-58.91690824999999!3d-34.49360605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cb6643d2003%3A0xa8da0402f634b636!2sPilar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666390021913!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main> <!--Fin de la informacion de la pagina-->
+    
+        <footer> <!--Inicio del footer-->
+            <div class="redes_copy">
+                <p id="copyright">Todos los derechos reservados.</p> 
+                <p id="nombre_footer">DecoMix</p>
+                <div id="redes_sociales">
+                    <p id="follow">Siguenos</p>
+                    <ul>
+                        <li><a href="#"><img class="iconos_redes" src="../assets/icons/facebook_logo.png" alt="icono de facebook."></a></li>
+                        <li><a href="#"><img class="iconos_redes" src="../assets/icons/twitter_logo.png" alt="icono de twitter."></a></li>
+                        <li><a href="#"><img class="iconos_redes" src="../assets/icons/instagram_logo.png" alt="icono de instagram."></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer> <!--Fin del footer-->
+    </div>
+</body>
+</html>
