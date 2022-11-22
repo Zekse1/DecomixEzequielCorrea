@@ -143,12 +143,21 @@ main{
 }
 
 .contenido div{
-    width: 50%;
+    width: 45%;
 }
 
 .contenido{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+}
+@media(min-width:768px){
+    #mapa{
+        height: 80%;
+        align-self: center;
+    }
 }
 
 label{
