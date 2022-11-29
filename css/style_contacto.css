@@ -152,7 +152,10 @@ main{
     justify-content: space-around;
     align-content: center;
     height: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 @media(min-width:768px){
     #mapa{
         height: 80%;
