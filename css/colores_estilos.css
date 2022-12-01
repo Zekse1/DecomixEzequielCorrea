@@ -1,0 +1,18 @@
+body {
+  background-color: #ede574; }
+
+header {
+  background-color: #6ab6f4;
+  color: white; }
+  header a {
+    color: white; }
+  header .nav_menu ul {
+    background-color: #6ab6f4; }
+
+main {
+  background-color: #ede574;
+  color: black; }
+
+footer {
+  background-color: #f39349;
+  color: black; }
