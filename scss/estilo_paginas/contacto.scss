@@ -1,0 +1,52 @@
+#contacto{
+    height: 100%;
+    width: 100%;
+    grid-area: c;
+    
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        div{
+            width: 45%;
+        }
+    }
+    
+    @media(min-width:768px){
+        #mapa{
+            height: 80%;
+            align-self: center;
+        }
+    }
+    
+    label{
+        display: inline;
+        margin-left: 2.5%;
+    }
+    
+    input, textarea{
+        display: block;
+        margin-left: 2.5%;
+    }
+    
+    @media(max-width:768px){
+        .contenido{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2.5%;
+            margin-top: 2.5%;
+        }
+    
+        #formulario_contacto p,
+        #formulario_contacto h3,
+        #mapa p{
+            font-size: 20px;
+        }
+    }
+}
+

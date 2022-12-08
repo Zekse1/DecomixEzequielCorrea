@@ -1,0 +1,46 @@
+/* inicio estilos para main */
+#home{
+    grid-area: c;
+    
+    @media (min-width:768px){ /*inicio vista desktop*/
+        .contenido{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 5%;
+            align-items: center;
+            margin: 5%;
+        }
+        
+        #imagen_contenido img{
+            width:80%;
+            padding: 2.5%;
+        }
+    }/*fin vista desktop*/
+    
+    @media (max-width:768px){/*inicio vista mobile*/
+    
+        .contenido{
+            display: grid;
+            justify-items: center;
+            margin: 5%;
+        }
+    
+        #imagen_contenido img{
+            width: 100%;
+        }
+    
+        #presentacion{
+            margin-top: 50px;
+        }
+    
+        #presentacion h3,
+        #presentacion p{
+            text-align: center;
+            font-size: 20px;
+        }
+    }/*fin vista mobile*/
+}
+
+
+
+/* fin estilos para main */

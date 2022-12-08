@@ -1,0 +1,54 @@
+#presupuesto{
+    grid-area: c;
+    width: 100%;
+
+    section{
+        width: 100%;
+    }
+
+    @media(min-width:768px){
+        .contenido ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "s1 s2"
+                                 "s3 s4";
+        
+            justify-items: center;
+        }
+        #s1{
+            grid-area: s1;
+        }
+        #s2{
+            grid-area: s2;
+        }
+        #s3{
+            grid-area: s3;
+        }
+        #s4{
+            grid-area: s4;
+        }
+     }
+    
+    @media (max-width:768px){
+    
+        h3{
+            padding-left: 0;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    
+    }
+    
+    .contenido{
+        li{
+            list-style: none;
+        }
+
+        img{
+            width: 50%;
+        }
+    }
+}
+
+
