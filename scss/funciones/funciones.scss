@@ -1,0 +1,26 @@
+
+@mixin estilo_letra($tamanio, $color, ){
+    @if $tamanio == sm{
+        font-size: 16px;
+    }
+    @else if $tamanio == md{
+        font-size: 20px;
+    }
+    @else if $tamanio == lg{
+        font-size: 30px;
+    }
+
+    @if $color == ng{
+        color: black;
+    }
+    @else if $color == bl{
+        color: white;
+    }
+}
+
+.separacion{
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include estilo_letra(lg, ng)
+}

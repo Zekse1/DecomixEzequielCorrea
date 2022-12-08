@@ -1,3 +1,5 @@
+@import "../funciones/funciones.scss";
+
 /* inicio estilos para main */
 #home{
     grid-area: c;
@@ -36,7 +38,7 @@
         #presentacion h3,
         #presentacion p{
             text-align: center;
-            font-size: 20px;
+            @include estilo_letra(md, ng)
         }
     }/*fin vista mobile*/
 }

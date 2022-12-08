@@ -3,12 +3,11 @@
 @import "estilo_paginas/presupuesto";
 @import "estilo_paginas/mobiliario";
 @import "estilo_paginas/contacto";
+@import "funciones/funciones.scss";
 
 $color_uno:rgb(237,229,116);
 $color_dos:rgb(106,182,244);
 $color_tres:rgb(243,147,73);
-$b_letra:white;
-$n_letra:black;
 
 *{
     margin: 0;
@@ -46,9 +45,10 @@ header{
     grid-area: h;
 
     background-color: $color_dos;
-    color: $b_letra;
+    @include estilo_letra(sm, bl)
+
     a{
-        color:$b_letra;
+        @include estilo_letra(sm, bl)
     }
 }
 
@@ -142,7 +142,10 @@ nav{
 
 main{
     background-color: $color_uno;
-    color: $n_letra;
+    @include estilo_letra(lg, ng)
+    .titulo_main{
+        @extend .separacion;
+    }
 }
 
 /* inicio estilos para footer */
@@ -151,7 +154,7 @@ footer{
     grid-area: f;
 
     background-color: $color_tres;
-    color: $n_letra;
+    @include estilo_letra(md, ng)
 
     .iconos_redes{
         width: 24px;

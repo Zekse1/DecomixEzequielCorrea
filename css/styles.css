@@ -1,3 +1,10 @@
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
+
 /* inicio estilos para main */
 #home {
   grid-area: c;
@@ -29,9 +36,17 @@
       #home #presentacion h3,
       #home #presentacion p {
         text-align: center;
-        font-size: 20px; } }
+        font-size: 20px;
+        color: black; } }
 
 /* fin estilos para main */
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
+
 #catering {
   grid-area: c; }
   #catering .imagenes_contenido {
@@ -48,6 +63,13 @@
       padding-left: 0;
       padding-bottom: 10px;
       text-align: center; } }
+
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
 
 #presupuesto {
   grid-area: c;
@@ -79,6 +101,13 @@
   #presupuesto .contenido img {
     width: 50%; }
 
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
+
 #mobiliario {
   grid-area: c; }
   #mobiliario .imagenes_contenido {
@@ -95,6 +124,13 @@
       padding-left: 0;
       padding-bottom: 10px;
       text-align: center; } }
+
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
 
 #contacto {
   height: 100%;
@@ -131,6 +167,13 @@
     #contacto #mapa p {
       font-size: 20px; } }
 
+.separacion, main .titulo_main {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -155,8 +198,10 @@ header {
   padding: .5rem 2rem;
   grid-area: h;
   background-color: #6ab6f4;
+  font-size: 16px;
   color: white; }
   header a {
+    font-size: 16px;
     color: white; }
 
 nav {
@@ -220,6 +265,7 @@ nav {
 /*Fin vista mobile*/
 main {
   background-color: #ede574;
+  font-size: 30px;
   color: black; }
 
 /* inicio estilos para footer */
@@ -227,6 +273,7 @@ footer {
   width: 100%;
   grid-area: f;
   background-color: #f39349;
+  font-size: 20px;
   color: black; }
   footer .iconos_redes {
     width: 24px;
