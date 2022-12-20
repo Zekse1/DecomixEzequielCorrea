@@ -181,7 +181,7 @@
 body {
   background-color: #ede574;
   width: 100%;
-  font-family: dancing script; }
+  font-family: nunito; }
   body #contenedor_maestro {
     display: grid;
     min-height: 100vh;
@@ -189,7 +189,8 @@ body {
     grid-template-rows: 25%,25%,25%,25%;
     grid-template-areas: "h h h" "c c c" "c c c" "f f f"; }
   body div p {
-    font-size: 30px; }
+    font-size: 30px;
+    color: black; }
 
 header {
   display: flex;
@@ -198,10 +199,10 @@ header {
   padding: .5rem 2rem;
   grid-area: h;
   background-color: #6ab6f4;
-  font-size: 16px;
+  font-size: 20px;
   color: white; }
   header a {
-    font-size: 16px;
+    font-size: 20px;
     color: white; }
 
 nav {
@@ -264,9 +265,7 @@ nav {
 
 /*Fin vista mobile*/
 main {
-  background-color: #ede574;
-  font-size: 30px;
-  color: black; }
+  background-color: #ede574; }
 
 /* inicio estilos para footer */
 footer {

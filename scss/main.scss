@@ -17,7 +17,7 @@ $color_tres:rgb(243,147,73);
 body{
     background-color: $color_uno;
     width: 100%;
-    font-family:dancing script;
+    font-family:nunito;
 
     #contenedor_maestro{
         display: grid;
@@ -32,7 +32,7 @@ body{
 
     div{
         p{
-            font-size: 30px;
+            @include estilo_letra(lg, ng)
         }
     }
 }
@@ -45,10 +45,10 @@ header{
     grid-area: h;
 
     background-color: $color_dos;
-    @include estilo_letra(sm, bl)
+    @include estilo_letra(md, bl)
 
     a{
-        @include estilo_letra(sm, bl)
+        @include estilo_letra(md, bl)
     }
 }
 
@@ -142,7 +142,6 @@ nav{
 
 main{
     background-color: $color_uno;
-    @include estilo_letra(lg, ng)
     .titulo_main{
         @extend .separacion;
     }
