@@ -1,6 +1,23 @@
 @import "../funciones/funciones.scss";
 
 /* inicio estilos para main */
+
+#presentacion{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 3%;
+    border-radius: 16px;
+    h3{
+        @include estilo_letra(lg, ng)
+        text-align:center;
+        font-weight: bold;
+    }
+
+    p{
+        @include estilo_letra(md, ng)
+        text-align:center;
+    }
+}
+
 #home{
     grid-area: c;
     
@@ -13,9 +30,11 @@
             margin: 5%;
         }
         
-        #imagen_contenido img{
-            width:80%;
-            padding: 2.5%;
+        #imagen_contenido{
+            img{
+                width:80%;
+                padding: 2.5%;
+            }
         }
     }/*fin vista desktop*/
     
@@ -27,22 +46,16 @@
             margin: 5%;
         }
     
-        #imagen_contenido img{
-            width: 100%;
+        #imagen_contenido{
+            img{
+                width: 100%;
+            }
         }
     
         #presentacion{
             margin-top: 50px;
         }
-    
-        #presentacion h3,
-        #presentacion p{
-            text-align: center;
-            @include estilo_letra(md, ng)
-        }
     }/*fin vista mobile*/
 }
-
-
 
 /* fin estilos para main */
