@@ -182,7 +182,7 @@
         #contacto .contenido #formulario_contacto form .row {
           width: 100%;
           justify-content: space-between;
-          background-color: rgba(255, 255, 255, 0); }
+          background-color: rgba(255, 255, 255, 0.1); }
           #contacto .contenido #formulario_contacto form .row .mb-2 {
             width: 48%; }
           #contacto .contenido #formulario_contacto form .row .mb-3 {
