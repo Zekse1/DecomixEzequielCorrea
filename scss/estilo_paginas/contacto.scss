@@ -14,6 +14,11 @@
         margin-top: 30px;
         margin-bottom: 30px;
 
+        h3{
+            @include estilo_letra(lg, ng)
+            font-weight: bold;
+        }
+
         div{
             background-color: rgba(255, 255, 255, 0.3);
             padding: 3%;
@@ -22,22 +27,41 @@
         }
 
         #formulario_contacto{
-            h3{
-                @include estilo_letra(lg, ng)
-                font-weight: bold;
-            }
-            p{
-                @include estilo_letra(md, ng)
-            }
-        }
-
-        #mapa{
             p{
                 @include estilo_letra(md, ng)
             }
             text-align: center;
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .row{
+                    width: 100%;
+                    justify-content:space-between;
+                    background-color: rgba(255, 0, 0, 0);
+                    
+                    .mb-2{
+                        width: 48%;
+                    }
+
+                    .mb-3{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #mapa{
+            text-align: center;
+            p{
+                @include estilo_letra(md, ng)
+                
+            }
             iframe{
                 width: 80%;
+                height: 70%;
                 margin-top: 5%;
             }
         }
@@ -49,20 +73,12 @@
         }
     }
     
-    label{
-        display: inline;
-    }
-    
-    input, textarea{
-        display: block;
-    }
-    
     @media(max-width:768px){
         .contenido{
             display: flex;
             flex-direction: column;
-            margin-left: 2.5%;
             margin-top: 2.5%;
+            align-items: center;
 
             div{
                 width: 90%;
@@ -70,11 +86,13 @@
 
             #formulario_contacto{ ///Esto no funca como debe
                 text-align: center;
-                input{
-                    margin-left: 25%;
-                }
-                textarea{
-                    margin-left: 15%;
+            }
+
+            #mapa{
+                iframe{
+                    width: 80%;
+                    height: 50%;
+                    margin-top: 5%;
                 }
             }
         }
